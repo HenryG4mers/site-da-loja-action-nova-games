@@ -1,0 +1,33 @@
+.feat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem
+}
+
+.feat .card {
+    padding: .8rem .8rem 1.5rem
+}
+
+.feat .media {
+    aspect-ratio: 1/1;
+}
+
+.feat .media img {
+    object-fit: contain;
+    padding: 8%
+}
+
+.feat h3 {
+    margin: 1.2rem .4rem .3rem;
+    font-size: 1.3rem
+}
+
+.feat p {
+    color: var(--muted);
+    margin: 0 .4rem 1.2rem;
+    font-size: .98rem
+}
+
+.feat .btn {
+    margin: 0 .4rem
+}

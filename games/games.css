@@ -1,0 +1,204 @@
+/* games */
+.cats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.1rem
+}
+
+.cat {
+    display: block
+}
+
+.cat .media {
+    aspect-ratio: 3/4
+}
+
+.cat .media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.cat h3 {
+    position: absolute;
+    left: 1.2rem;
+    bottom: 1.1rem;
+    z-index: 2;
+    font-size: 1.5rem
+}
+@media(max-width:980px) {
+
+    .grid4,
+    .cats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .feat {
+        grid-template-columns: 1fr
+    }
+
+    .hero .wrap,
+    .sobre .wrap,
+    .contato .box {
+        grid-template-columns: 1fr
+    }
+
+    .hero .media {
+        aspect-ratio: 16/11
+    }
+
+    .sobre .media {
+        aspect-ratio: 16/10
+    }
+
+    .burger {
+        display: flex
+    }
+
+    header .bar>.btn {
+        display: none
+    }
+
+    nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 72px;
+        background: var(--bg);
+        border-bottom: 1px solid var(--line);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .35s
+    }
+
+    #menu:checked~nav {
+        max-height: 420px
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: .5rem 1.25rem 1.2rem
+    }
+
+    nav a {
+        display: block;
+        padding: .9rem 0;
+        font-size: 1.15rem;
+        border-bottom: 1px solid var(--line)
+    }
+}
+
+@media(max-width:560px) {
+    .facts {
+        grid-template-columns: 1fr
+    }
+
+    .pill {
+        min-width: 100%
+    }
+
+    .cta .btn {
+        width: 100%
+    }
+
+    .grid4 {
+        gap: .8rem
+    }
+
+    .card h3 {
+        font-size: .98rem
+    }
+}
+
+@media(max-width:980px) {
+
+    .grid4,
+    .cats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .feat {
+        grid-template-columns: 1fr
+    }
+
+    .hero .wrap,
+    .sobre .wrap,
+    .contato .box {
+        grid-template-columns: 1fr
+    }
+
+    .hero .media {
+        aspect-ratio: 16/11
+    }
+
+    .sobre .media {
+        aspect-ratio: 16/10
+    }
+
+    .burger {
+        display: flex
+    }
+
+    header .bar>.btn {
+        display: none
+    }
+
+    nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 72px;
+        background: var(--bg);
+        border-bottom: 1px solid var(--line);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .35s
+    }
+
+    #menu:checked~nav {
+        max-height: 420px
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: .5rem 1.25rem 1.2rem
+    }
+
+    nav a {
+        display: block;
+        padding: .9rem 0;
+        font-size: 1.15rem;
+        border-bottom: 1px solid var(--line)
+    }
+}
+
+@media(max-width:560px) {
+    .facts {
+        grid-template-columns: 1fr
+    }
+
+    .pill {
+        min-width: 100%
+    }
+
+    .cta .btn {
+        width: 100%
+    }
+
+    .grid4 {
+        gap: .8rem
+    }
+
+    .card h3 {
+        font-size: .98rem
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    * {
+        transition: none !important;
+        scroll-behavior: auto !important
+    }
+}

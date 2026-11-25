@@ -1,0 +1,80 @@
+/* consoles */
+
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem
+}
+
+.sub {
+    font: 700 1.25rem Sora, sans-serif;
+    margin: 2.5rem 0 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem
+}
+
+.sub::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line)
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.1rem
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: .7rem .7rem 1.1rem;
+    transition: border-color .25s, transform .25s
+}
+
+.card:hover {
+    border-color: var(--blue);
+    transform: translateY(-4px)
+}
+
+.card .media {
+    aspect-ratio: 4/3;
+    border-radius: 12px
+}
+
+.card h3 {
+    font-size: 1.08rem;
+    margin: 1rem .5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem
+}
+
+.tag {
+    font: 800 .68rem "Nunito Sans", sans-serif;
+    letter-spacing: .08em;
+    background: var(--amber);
+    color: #1a1100;
+    padding: .2rem .55rem;
+    border-radius: 6px
+}
+
+.note {
+    margin-top: 1.8rem;
+    padding: 1.1rem 1.4rem;
+    border: 1px dashed #4a4a55;
+    border-radius: 14px;
+    color: var(--muted)
+}
+
+.note b {
+    color: var(--text)
+}
